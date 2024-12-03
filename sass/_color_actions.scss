@@ -1,0 +1,205 @@
+@use 'palette';
+//COLOR ACTIONS
+//PRIMARY
+//BRAND
+
+$color-blue-100: #B1CAE4; //Blue 100
+$color-blue-900: #00478B; //Blue 900
+/**
+* @tokens ColorsActions
+* @presenter Color
+*/
+
+$color-action-primary: palette.$color-secondary;
+$color-action-secondary: palette.$color-tertiary;
+$color-action-primary-hover: $color-blue-900;
+$color-action-primary-active: palette.$color-primary;
+$color-action-primary-text: palette.$color-white;
+
+$color-action-primary-inverse: palette.$color-white;
+$color-action-primary-inverse-hover: palette.$color-blue-50;
+$color-action-primary-inverse-active: $color-blue-100;
+$color-action-primary-inverse-text: $color-blue-900;
+
+//COLOR ACTIONS
+//SECONDARY AS IN SECONDARY BUTTON
+//BRAND
+$color-action-secondary: none;
+$color-action-secondary-hover: #EDF2F8; //BLUE 0;
+$color-action-secondary-active: $color-blue-100; //BLUE 100
+$color-action-secondary-border: palette.$color-secondary;
+$color-action-secondary-text: palette.$color-secondary;
+$color-action-secondary-text-hover: palette.$color-tertiary;
+$color-action-secondary-text-active: $color-blue-900;
+
+$color-action-secondary-inverse: none;
+$color-action-secondary-inverse-hover: rgba(palette.$color-white, .1); //White 100
+$color-action-secondary-inverse-active: rgba(palette.$color-white, .3); //White 300
+$color-action-secondary-inverse-border: palette.$color-white;
+$color-action-secondary-inverse-text: palette.$color-white;$color-action-secondary-inverse-text-hover: rgba(palette.$color-white, .7);
+$color-action-secondary-inverse-text-active: rgba(palette.$color-white, .95);
+
+$color-action-disabled-background: rgba(palette.$color-black, .05); //Black 50
+$color-action-disabled-background-inverse: rgba(palette.$color-white, .25); //White 200
+$color-action-disabled-border: rgba(palette.$color-black, .2); //Black 200
+$color-action-disabled-border-inverse: rgba(palette.$color-white, .3); //White 300
+$color-action-disabled-text: rgba(palette.$color-black, .3); //Black 300
+$color-action-disabled-text-inverse: rgba(palette.$color-white, .5); //White 500
+
+//COLOR ACTION POSITIVE, NEGATIVE, CAUTION
+
+/**
+* @tokens ColorsActionsPos
+* @presenter Color
+*/
+
+//COLOR ACTION POSITIVE
+
+$color-grass-100: #CDF4B6;
+$color-grass-400: #6ABE53;
+$color-grass-500: #49A338;
+$color-grass-600: #2E8723;
+$color-grass-700: #22731A;
+$color-grass-800: #196714;
+
+$color-positive: $color-grass-500;
+
+$color-action-primary-background-positive: $color-grass-500; //Grass 500
+$color-action-primary-background-positive-inverse: #8DD672; //Grass 300
+
+$color-action-primary-background-hover-positive: $color-grass-600; //Grass 600
+$color-action-primary-background-hover-positive-inverse: $color-grass-100; //Grass 100
+
+$color-action-primary-background-active-positive: $color-grass-800; //Grass 800
+$color-action-primary-background-active-positive-inverse: #F8FFF2; //Grass 0
+
+$color-action-primary-text-positive: palette.$color-white;
+$color-action-primary-text-positive-inverse: #0B3D0B; //Grass 1100
+
+//COLOR ACTION SECONDARY POSITIVE
+$color-action-secondary-background-positive: none; 
+$color-action-secondary-background-positive-inverse: none;
+$color-action-secondary-background-hover-positive: #E6FCD6; //Grass 50
+$color-action-secondary-background-hover-positive-inverse: #0B330B; //Grass 1150
+
+$color-action-secondary-background-active-positive: $color-grass-100; //Grass 100
+$color-action-secondary-background-active-positive-inverse: $color-grass-700; //Grass 700
+
+$color-action-secondary-border-positive: $color-grass-500; //Grass 500
+$color-action-secondary-border-positive-inverse: $color-grass-400; //Grass 400
+
+$color-action-secondary-text-positive: $color-grass-700; //Grass 700
+$color-action-secondary-text-positive-inverse: $color-grass-600; //Grass 600
+
+$color-action-secondary-text-hover-positive: $color-grass-600; //Grass 600
+$color-action-secondary-text-hover-positive-inverse: #AFE894; //Grass 200
+
+$color-action-secondary-text-active-positive: $color-grass-800; //Grass 800
+$color-action-secondary-text-active-positive-inverse: $color-grass-400; //Grass 400
+
+
+/**
+* @tokens ColorsActionsNeg
+* @presenter Color
+*/
+
+$color-error: #BF1C00; //FIRE 700
+//THIS SHOULD BE FIRE 500 TO BE CONSISTENT WITH POS
+
+$color-fire-0: #FFF4F2;
+$color-fire-100: #FFBAAD;
+$color-fire-200: #FF9885;
+$color-fire-500: #E72D0E;
+$color-fire-800: #AA1900;
+$color-fire-1150: #3C0C04;
+
+$color-action-primary-background-negative: $color-fire-500; //Fire 500
+$color-action-primary-background-negative-inverse: $color-fire-200; //Fire 200
+
+$color-action-primary-background-hover-negative: #D52305; //Fire 600
+$color-action-primary-background-hover-negative-inverse: $color-fire-100; //Fire 100
+
+$color-action-primary-background-active-negative: $color-fire-800; //Fire 800
+$color-action-primary-background-active-negative-inverse: $color-fire-0; //Fire 0
+
+$color-action-primary-text-negative: palette.$color-white;
+$color-action-primary-text-negative-inverse: $color-fire-1150; //Fire 1150
+
+//COLOR ACTION SECONDARY NEGATIVE
+$color-action-secondary-background-negative: none; 
+$color-action-secondary-background-negative-inverse: none;
+
+$color-action-secondary-background-hover-negative: $color-fire-0; //Fire 0
+$color-action-secondary-background-hover-negative-inverse: $color-fire-1150; //Fire 1150
+
+$color-action-secondary-background-active-negative: $color-fire-100; //Fire 100
+$color-action-secondary-background-active-negative-inverse: $color-fire-800; //Fire 800
+
+$color-action-secondary-border-negative: $color-fire-500; //Fire 500
+$color-action-secondary-border-negative-inverse: $color-fire-200; //Fire 200
+
+$color-action-secondary-text-negative: #BF1C00; //Fire 700
+$color-action-secondary-text-negative-inverse: $color-fire-100; //Fire 100
+
+$color-action-secondary-text-hover-negative: $color-fire-500; //Fire 500
+$color-action-secondary-text-hover-negative-inverse: #FFD9D2; //Fire 50
+
+$color-action-secondary-text-active-negative: $color-fire-800; //Fire 800
+$color-action-secondary-text-active-negative-inverse: $color-fire-200; //Fire 200
+
+/**
+* @tokens ColorsActionsWar
+* @presenter Color
+*/
+
+// $color-warning: #DC660B;
+
+$color-sun-0: #FFFDF2;
+$color-sun-50: #FFF1B3;
+$color-sun-100: #FFE073; 
+$color-sun-200: #FFCC33;
+$color-sun-300: #DFAC22; 
+$color-sun-500: #A3760C;
+$color-sun-600: #896006;
+
+$color-sun-700: #724E04; //1x
+$color-sun-800: #5E4003; //1x
+$color-sun-1200: #3C0C04; //1x
+
+$color-action-primary-background-warning: $color-sun-200; //Sun 200
+$color-action-primary-background-warning-inverse: $color-sun-100; //Sun 100
+
+$color-action-primary-background-hover-warning: $color-sun-100; //Sun 100
+$color-action-primary-background-hover-warning-inverse: $color-sun-50; //Sun 50
+
+$color-action-primary-background-active-warning: $color-sun-300; //Sun 300
+$color-action-primary-background-active-warning-inverse: $color-sun-0; //Sun 0
+
+$color-action-primary-text-warning: $color-sun-1200; //Sun 1200
+$color-action-primary-text-warning-inverse: $color-sun-700; //Sun 700
+
+//COLOR ACTION SECONDARY NEGATIVE
+$color-action-secondary-background-warning: none; 
+$color-action-secondary-background-warning-inverse: none;
+
+$color-action-secondary-background-hover-warning: $color-sun-50; //Sun 50
+$color-action-secondary-background-hover-warning-inverse: #412D05; //Sun 1000
+
+$color-action-secondary-background-active-warning: $color-sun-100; //Sun 100
+$color-action-secondary-background-active-warning-inverse: $color-sun-600; //Sun 600
+
+$color-action-secondary-border-warning: $color-sun-200; //Sun 200
+$color-action-secondary-border-warning-inverse: $color-sun-300; //Sun 300
+
+$color-action-secondary-text-warning: $color-sun-500; //Sun 500
+$color-action-secondary-text-warning-inverse: $color-sun-200; //Sun 200
+
+$color-action-secondary-text-hover-warning: $color-sun-600; //Sun 600
+$color-action-secondary-text-hover-warning-inverse: $color-sun-100; //Sun 100
+
+$color-action-secondary-text-active-warning: $color-sun-800; //Sun 800
+$color-action-secondary-text-active-warning-inverse: $color-sun-0; //Sun 0
+
+/**
+  * @tokens-end
+*/

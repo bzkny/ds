@@ -1,0 +1,72 @@
+@use "sass:map";
+@use '../../../sass/helpers';
+@use '../../../sass/borders';
+@use '../../../sass/palette';
+@use '../../../sass/color_actions';
+@use '../../../sass/spacing';
+
+.btn {
+    height: 63px;
+    padding: spacing.$padding-75 spacing.$padding-150;
+    background: color_actions.$color-action-primary;
+    color: color_actions.$color-action-primary-text;
+
+    &:hover, .hover {
+        background: color_actions.$color-action-primary-hover;
+    }
+    &:active, .active {
+        background: color_actions.$color-action-primary-active;
+    }
+    &:disabled, .disabled{
+        background: helpers.disabled();
+    }
+    &-inverse {
+        background: palette.$color-white;
+        color: color_actions.$color-action-primary-inverse-text;
+
+        &:hover, .hover {
+            background: color_actions.$color-action-primary-inverse-hover;
+        }
+        &:active, .active {
+            background: color_actions.$color-action-primary-inverse-active;
+        }
+    }
+}
+
+.btn-secondary {
+    height: 63px;
+    padding: spacing.$padding-75 spacing.$padding-150;
+
+    @include borders.border();
+    background: none;
+    color: color_actions.$color-action-secondary-text;
+
+    &:hover, .hover {
+        background: color_actions.$color-action-secondary-hover;
+        color: color_actions.$color-action-secondary-text-hover;
+    }
+    &:active, .active {
+        background: color_actions.$color-action-secondary-active;
+        color: color_actions.$color-action-secondary-text-active;
+    }
+    &:disabled, .disabled{
+        background: helpers.disabled();
+    }
+    &-inverse {
+        background: none;
+        color: color_actions.$color-action-secondary-inverse-text;
+
+        @include borders.border($color: color_actions.$color-action-secondary-inverse-border);
+
+        &:hover, .hover {
+            background: color_actions.$color-action-secondary-inverse-hover;
+        }
+        &:active, .active {
+            background: color_actions.$color-action-secondary-inverse-active;
+        }
+    }
+}
+
+.btn-link, a.link {
+    content: "test";
+}

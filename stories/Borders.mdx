@@ -1,0 +1,96 @@
+import { DesignTokenDocBlock } from "storybook-design-token";
+import { Meta, Color } from "@storybook/blocks";
+
+<Meta title="Tokens/Borders/Borders" />
+
+<style> 
+{`
+.card {
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+}
+`}
+</style>
+
+
+# Border Colors
+
+#### SASS Border Color Tokens
+
+<DesignTokenDocBlock categoryName="Borders/Borders" maxHeight={600} viewType="table" />
+
+
+#### SASS Border Width Tokens
+
+<DesignTokenDocBlock categoryName="Border-width" maxHeight={600} viewType="table" />
+
+
+#### SASS Border Mixin
+
+```
+
+@mixin border($width: $border-width-100, $style: solid, $color:$color-border-primary-brand, $radius:$corner-200) {
+  border: $width $style $color;
+  border-radius: $radius
+}
+
+```
+
+Which can be used in the following way:
+
+```
+.border-primary-brand {
+  @include border();
+}
+```
+
+#### Examples
+Border Brand
+<div className="grid-section">
+    <div className="col-half card border-primary-brand">
+        <h5>Border Primary Brand</h5>
+        <p>Add .border-primary-brand to border element</p>
+    </div>
+     <div className="col-half card border-tertiary-brand">
+        <h5>Border Tertiary Brand</h5>
+        <p>Add .border-tertiary-brand to border element</p>
+    </div>
+</div>
+
+<div className="grid-section color-background-primary">
+    <div className="col-half card border-primary-brand-inverse">
+        <h5>Border Brand Primary Inverse</h5>
+        <p>Add .border-primary-brand-inverse to border element</p>
+    </div>
+    <div className="col-half card border-tertiary-brand-inverse">
+        <h5>Border Brand Tertiary Inverse</h5>
+        <p>Add .border-tertiary-brand-inverse to border element</p>
+    </div>
+</div>
+<br/>
+Border Neutral
+<div className="grid-section">
+    <div className="col-half card border-primary-neutral">
+        <h5>Border Primary Neutral</h5>
+        <p>Add .border-primary-neutral to parent container</p>
+    </div>
+    <div className="col-half card border-tertiary-neutral">
+        <h5>Border Tertiary Neutral</h5>
+        <p>Add .border-tertiary-neutral to parent container</p>
+    </div>
+</div>
+
+Border Disabled - Brand & Neutral
+<div className="grid-section">
+    <div className="col-half border-primary-brand disabled card">
+        <h5>Border Brand Disabled</h5>
+        <p>Add .disabled immediately following border-color-any class class</p>
+    </div>
+    <div className="col-half border-primary-neutral disabled card">
+        <h5>Border Neutral Disabled</h5>
+        <p>Add .disabled immediately following border-color-any class</p>
+    </div>
+</div>
+
+#### Accessibility

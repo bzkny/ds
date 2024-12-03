@@ -1,0 +1,87 @@
+@use 'palette';
+
+//NEW BORDER COLORS = 0
+/**
+* @tokens Borders/Borders
+* @presenter Color
+*/
+
+$color-border-primary-brand: #2A73B8; //palette.$color-tertiary;
+$color-border-disabled-brand: #90B4D7; //palette.$color-fourth also $color-text-disabled
+$color-border-tertiary-brand: #90B4D7; //palette.$color-fourth also $color-text-disabled
+
+$color-border-primary-neutral: rgba(0,0,0, .6); //palette.$color-text-tertiary-neutral;
+$color-border-disabled-neutral: rgba(0,0,0, .3); //palette.$color-text-disabled-neutral;
+$color-border-tertiary-neutral: rgba(0,0,0, .2); //palette.$color-text-disabled-neutral;
+
+$color-border-primary-inverse: rgba(255,255,255, .8);
+$color-border-secondary-inverse: rgba(255,255,255, .4);
+$color-border-tertiary-inverse: rgba(255,255,255, .2);
+
+/**
+* @tokens Border-width
+* @presenter Border
+*/
+$border-width-100: 1px;
+$border-width-200: 2px;
+$border-width-300: 3px;
+$border-width-1600: 16px;
+
+/**
+* @tokens Radii
+* @presenter Border
+*/
+$corner-none: 0;
+$corner-100: 4px;
+$corner-200: 8px;
+$corner-400: 16px;
+$corner-800: 32px;
+$corner-1200: 48px;
+$corner-round: 9999px;
+
+/**
+* @tokens-end
+*/
+
+@mixin border($width: $border-width-100, $style: solid, $color:$color-border-primary-brand, $radius:$corner-200) {
+  border: $width $style $color;
+  border-radius: $radius
+}
+
+.border-primary-brand {
+  @include border();
+  &.disabled, :disabled {
+    @include border($color: $color-border-disabled-brand);
+  }
+  &-inverse {
+    @include border($color:$color-border-primary-inverse);
+  }
+}
+.border-tertiary-brand {
+  @include border($color:$color-border-tertiary-brand);
+  &.disabled, :disabled {
+    @include border($color: $color-border-disabled-brand);
+  }
+  &-inverse {
+    @include border($color:$color-border-tertiary-inverse);
+  }
+}
+
+.border-primary-neutral {
+  @include border($color:$color-border-primary-neutral);
+  &.disabled, :disabled {
+    @include border($color: $color-border-disabled-neutral);
+  }
+  &-inverse {
+    @include border($color:$color-border-primary-inverse);
+  }
+}
+.border-tertiary-neutral {
+  @include border($color:$color-border-tertiary-neutral);
+  &.disabled, :disabled {
+    @include border($color: $color-border-disabled-neutral);
+  }
+  &-inverse {
+    @include border($color:$color-border-tertiary-inverse);
+  }
+}

@@ -1,0 +1,32 @@
+import { DesignTokenDocBlock } from "storybook-design-token";
+import { Meta } from "@storybook/blocks";
+
+
+<Meta title="Tokens/Spacing" />
+
+### Spacing
+
+<p>SASS Spacing and Size Tokens. Spacing values are currently in rem. Where $spacing-100 = 1rem.</p> 
+<p>Each spacing variable is accessible apart from padding and margins as a generic $spacing-100 variable corresponding to each of the same padding and margin numbers. See the value in the middle column of the padding and margin tables below.</p>
+
+<br/>
+##### Padding
+<DesignTokenDocBlock categoryName="Padding" maxHeight={600} viewType="table" />
+
+##### Margins
+
+<DesignTokenDocBlock categoryName="Margin" maxHeight={600} viewType="table" />
+
+### Usage
+Use the designated variable spacing wherever possible to acheive spacial harmony in the design of products.
+
+```
+
+.component-text {
+    //space between related things
+    margin-bottom: $margin-75;
+}
+```
+
+### Accessibility
+

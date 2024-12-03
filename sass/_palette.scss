@@ -1,0 +1,50 @@
+/**
+* @tokens Colors
+* @presenter Color
+*/
+//TO DO : I DON'T THINK THIS IS ACTUALLY PRIMARY
+$color-primary: #003672; //dark blue or blue 1000
+//THIS IS PRIMARY
+$color-secondary: #0054A4; //Blue 800
+$color-tertiary: #2A73B8; //Blue 600
+$color-fourth: #90B4D7; //Blue 200
+$color-blue-50: #cedeee; //Blue 50
+
+$color-white: rgb(255,255,255);
+$color-black: rgb(0,0,0);
+
+/**
+* @tokens ColorsText
+* @presenter Color
+*/
+
+//TEXT COLORS
+$color-text-primary: $color-primary;
+$color-text-secondary: $color-secondary;
+$color-text-tertiary: $color-tertiary;
+$color-text-disabled: $color-fourth;
+
+$color-text-primary-inverse: $color-white;
+$color-text-secondary-inverse: rgba($color-white, .9); //White 900
+$color-text-tertiary-inverse: rgba($color-white, .7); //White 700
+$color-text-disabled-inverse:rgba($color-white, .5); //Black 500
+
+$color-text-primary-neutral: rgba($color-black, .95); //Black 950
+$color-text-secondary-neutral: rgba($color-black, .8); //Black 800
+$color-text-tertiary-neutral: rgba($color-black, .6); //Black 600
+$color-text-disabled-neutral: rgba($color-black, .3); //Black 300
+
+$color-text-primary-neutral-inverse: $color-white;
+$color-text-secondary-neutral-inverse: rgba($color-white, .9); //White 900
+$color-text-tertiary-neutral-inverse: rgba($color-white, .7); //White 700
+$color-text-disabled-neutral-inverse: rgba($color-white, .5); //Black 500
+
+
+//TO DO : IS THIS OPACITY? 
+$color-text-disabled: $color-fourth;
+//TO DO : THIS IS DISABLED COLOR
+$color-border: $color-secondary;
+
+/**
+  * @tokens-end
+*/

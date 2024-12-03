@@ -1,0 +1,88 @@
+import { DesignTokenDocBlock } from "storybook-design-token";
+import { Meta, Color } from "@storybook/blocks";
+
+<Meta title="Tokens/Corner Radii" />
+
+<style> 
+{`
+
+.card-none {
+    margin: 16px;
+    padding: 16px;
+    border-radius: 0px;
+}
+.card-200 {
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+}
+.card-800 {
+    margin: 16px;
+    padding: 16px;
+    border-radius: 32px;
+}
+
+.card-round {
+    margin: 16px;
+    padding: 16px;
+    border-radius: 9999px;
+}
+`}
+</style>
+
+# Corner Radii
+
+#### SASS Corner Radii Tokens
+
+<DesignTokenDocBlock categoryName="Radii" maxHeight={600} viewType="table" />
+
+#### Using Corner Radii with SASS Border Mixin
+
+The mixin contains a line for radius, and is passed as a parameter. By default the parameter is $corner-200, or 8px.
+```
+
+@mixin border($width: $border-width-100, $style: solid, $color:$color-border-primary-brand, $radius:$corner-200) {
+  border: $width $style $color;
+  border-radius: $radius
+}
+
+```
+
+To change the border-radius add one of the corner-radius tokens. For example:
+
+```
+.border-primary-brand-corner-none {
+  @include border($radius:$corner-none);
+}
+```
+
+<div className="grid-section">
+    <p className="col-half">An example of .border-primary-brand-corner-none class is applied here:</p>
+    <p className="col-half">An example of the above the default border radius is applied here:</p>
+</div>
+
+<div className="grid-section">
+    <div className="col-half border-primary-brand card-none ">
+        <h5>Corner Radii 0</h5>
+        <p>Add .border-primary-brand-corner-none or 
+        @include border($radius:$corner-none) to border element</p>
+    </div>
+    <div className="col-half border-primary-brand card-200">
+        <h5>Corner Radii 200</h5>
+        <p>Add @include border() to border element</p>
+    </div>
+</div>
+
+<div className="grid-section">
+    <div className="col-half border-primary-brand card-800">
+        <h5>Corner Radii 800</h5>
+        <p>Add @include border() to border element</p>
+    </div>
+    <div className="col-half border-primary-brand card-round">
+        <h5>Corner Radii Round</h5>
+        <p>Add @include border($radius:$corner-round)</p>
+    </div>
+</div>
+
+
+#### Accessibility

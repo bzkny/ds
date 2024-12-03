@@ -1,0 +1,41 @@
+@use "palette";
+
+//TODO SHOULD THIS BE BLUE 600 INSTEAD? 500 IS NOT USED ANYWHERE
+
+//
+$blue-500: #4284C2;
+
+// $gradient-2tone-blue-500: 
+// $gradient-2tone-blue-1000: 
+// $gradient-3tone-blue-1000-150d: 
+// $gradient-3tone-blue-1000-120d: 
+// $gradient-3tone-blue-600-150d: 
+// $gradient-3tone-blue-600-120d: 
+
+// $gradient-2tone-sky-0:
+// $gradient-2tone-sky-100:
+// $gradient-2tone-sky-50-90d-mirror:
+// $gradient-3tone-sky-50-0d-full:
+// $gradient-3tone-sky-50-0d-half:
+// $gradient-3tone-sky-50-90d:
+
+// $gradient-2tone-gray-50:
+// $gradient-3tone-gray-100:
+// $gradient-3tone-gray-100-90d-mirror:
+// $gradient-3tone-white-0d-full: 
+// $gradient-3tone-white-0d-half: 
+// $gradient-3tone-white-90d-full: 
+
+
+
+
+$accent-2t-blue800: linear-gradient(120deg, palette.$color-secondary, #4284C2);
+
+%accent-2t-blue800 {
+    background: $accent-2t-blue800;
+}
+
+
+%accent-2t-blue800 {
+    background: linear-gradient(120deg, palette.$color-secondary, #4284C2);
+}

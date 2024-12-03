@@ -1,0 +1,4 @@
+/.anima/
+*.DS_Store
+*storybook.log
+node_modules

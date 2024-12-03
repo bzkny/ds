@@ -1,0 +1,148 @@
+$base: 4;
+$sizes: (
+    "spacing-10": .0625rem,//2px
+    "spacing-25": .25rem,//4px
+    "spacing-40": .375rem,//6px
+    "spacing-50": .5rem,//8px
+    "spacing-60": .625rem, //10px
+    "spacing-75": .75rem, //12px - related things
+    "spacing-90": .875rem, //14px
+    "spacing-100": 1rem, //16px
+    "spacing-125": 1.25rem, //20px
+    "spacing-150": 1.5rem, //24px - unrelated things
+    "spacing-175": 1.75rem, //28px
+    "spacing-200": 2rem, //32px
+    "spacing-250": 2.5rem, //40px - related things
+    "spacing-300": 3.0rem, //48px
+    "spacing-350": 3.5rem, //56px
+    "spacing-400": 4.0rem, //64px
+    "spacing-500": 5.0rem, //80px
+    "spacing-600": 6.0rem, //96px
+    "spacing-800": 8.0rem, //128px
+    "spacing-1000": 10.0rem, //160px
+    "spacing-1200": 12.0rem //192px
+);
+$spacing-10: map-get($sizes, "spacing-10" );
+$spacing-25: map-get($sizes, "spacing-25" );
+$spacing-40: map-get($sizes, "spacing-40" );
+$spacing-50: map-get($sizes, "spacing-50" );
+$spacing-60: map-get($sizes, "spacing-60" );
+$spacing-75: map-get($sizes, "spacing-75" );
+$spacing-90: map-get($sizes, "spacing-90" );
+$spacing-100: map-get($sizes, "spacing-100" );
+$spacing-125: map-get($sizes, "spacing-125" );
+$spacing-150: map-get($sizes, "spacing-150" );
+$spacing-175: map-get($sizes, "spacing-175" );
+$spacing-200: map-get($sizes, "spacing-200" );
+$spacing-250: map-get($sizes, "spacing-250" );
+$spacing-300: map-get($sizes, "spacing-300" );
+$spacing-350: map-get($sizes, "spacing-350" );
+$spacing-400: map-get($sizes, "spacing-400" );
+$spacing-500: map-get($sizes, "spacing-500" );
+$spacing-600: map-get($sizes, "spacing-600" );
+$spacing-800: map-get($sizes, "spacing-800" );
+$spacing-1000: map-get($sizes, "spacing-1000" );
+$spacing-1200: map-get($sizes, "spacing-1200" );
+
+/**
+* @tokens Padding
+* @presenter Spacing
+*/
+
+$padding-10: $spacing-10;
+$padding-25: $spacing-25;
+$padding-40: $spacing-40;
+$padding-50: $spacing-50;
+$padding-60: $spacing-60;
+$padding-75: $spacing-75;
+$padding-90: $spacing-90;
+$padding-100: $spacing-100;
+$padding-125: $spacing-125;
+$padding-150: $spacing-150;
+$padding-175: $spacing-175;
+$padding-200: $spacing-200;
+$padding-250: $spacing-250;
+$padding-300: $spacing-300;
+$padding-350: $spacing-350;
+$padding-400: $spacing-400;
+$padding-500: $spacing-500;
+$padding-600: $spacing-600;
+$padding-800: $spacing-800;
+$padding-1000: $spacing-1000;
+$padding-1200: $spacing-1200;
+
+/**
+* @tokens Margin
+* @presenter Spacing
+*/
+$margin-10: $spacing-10;
+$margin-25: $spacing-25;
+$margin-40: $spacing-40;
+$margin-50: $spacing-50;
+$margin-60: $spacing-60;
+$margin-75: $spacing-75;
+$margin-90: $spacing-90;
+$margin-100: $spacing-100;
+$margin-125: $spacing-125;
+$margin-150: $spacing-150;
+$margin-175: $spacing-175;
+$margin-200: $spacing-200;
+$margin-250: $spacing-250;
+$margin-300: $spacing-300;
+$margin-350: $spacing-350;
+$margin-400: $spacing-400;
+$margin-500: $spacing-500;
+$margin-600: $spacing-600;
+$margin-800: $spacing-800;
+$margin-1000: $spacing-1000;
+$margin-1200: $spacing-1200;
+
+/**
+* @tokens-end
+*/
+
+//TODO
+// //EVERYTHING ELSE IS A MULTIPLE OF 4 ($base)
+// $padding-1000: calc($padding-250 x $base);
+
+// button {
+//     padding: $padding-75 $padding-150;
+// }
+
+
+// @each $side, $size in $sizes {
+//     .padding {
+
+//     }
+//     .padding-right {
+
+//     }
+//     .padding-left {
+
+//     }
+//     .padding-top {
+
+//     }
+//     .padding-bottom {
+        
+//     }
+// }
+
+//EXPERIMENT WITH GENERATING SASS TOKENS FROM MAP
+// $sizeStr: (
+//     "$spacing-50": .5rem, //8px - related things
+//     "$spacing-75": .75rem, //12px - related things
+//     "$spacing-90": .875rem, //14px
+//     "$spacing-150": 1.5rem, //24px - unrelated things
+//     "$spacing-175": 1.75rem, //28px - related things
+//     "$spacing-250": 2.5rem, //40px - unrelated things
+// );
+// @each $size-name, $size in $sizes {
+//     #{$size-name}: $size;
+// }
+// @each $key, $value in $sizeStr {
+//     :root {
+//         #{$key}: #{$value};
+//     }
+// }
+
