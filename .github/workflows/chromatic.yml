@@ -18,5 +18,4 @@ jobs:
       - uses: chromaui/action@latest
         # Options required for Chromatic's GitHub Action
         with:
-          projectToken: secrets.
-          token: secrets.GITHUB_DS
+          projectToken: ${{ secrets.CHROMATIC_SECRET }}

@@ -10,3 +10,5 @@ Dev notes:
 3. To compile both theme css and component css to their respective folders:  `npm run sass`
 4. To build & run Storybook: `npm run storybook`
 5. To run chromatic npm run chromatic
+
+You can view the chromatic published design system here: https://674e7749922df3c47354ef64-ytcjcwnbta.chromatic.com/?path=/docs/intro-to-the-design-system--docs
