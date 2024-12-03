@@ -14,8 +14,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "sass": "sass sass/:css/ stories/components/:stories/components/ --watch",    
-    "chromatic": "npx chromatic --project-token secret.CHROMATIC_SECRET"
-
+    "chromatic": "npx chromatic --project-token=CHROMATIC_SECRET"
   },
   "repository": {
     "type": "git",
